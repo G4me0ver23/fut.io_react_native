@@ -23,7 +23,6 @@ function LoginTela({navigation}) {
   }, [senha, email])
   const handleSubmit = async () => {
     if(user){
-      console.log('existe')
       await signIn(user)
       if (signed){
         return navigation.navigate('MainTela')

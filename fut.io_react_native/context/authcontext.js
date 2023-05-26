@@ -26,7 +26,6 @@ export const AuthProvider = ({ children }) => {
 
   const signIn = async ({ email, senha }) => {
     const request = await api.post('/login', { email, senha })
-    console.log(request)
     if (request.data.message) {
       console.log(request.data.message)
     } else {
@@ -44,9 +43,8 @@ export const AuthProvider = ({ children }) => {
     console.log('saiu')
   };
 
-
   return (
-    <AuthContext.Provider value={{ user, signed: !!user, signIn, signOut }}>
+    <AuthContext.Provider value={{ user, signed: !!user, signIn, signOut}}>
       {children}
     </AuthContext.Provider>
   );

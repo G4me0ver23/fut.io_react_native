@@ -2,10 +2,10 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Text, View, Button, Image, ImageBackground, StyleSheet, TouchableOpacity } from "react-native";
 
-import TreinoTela from "../pages/TreinoTela";
-import NutriTela from "../pages/NutriTela";
-import TaticTela from "../pages/TaticTela";
-import PsicoTela from "../pages/PsicoTela";
+import TreinoTela from "./TreinoTela/TreinoTela";
+import NutriTela from "./NutriTela/NutriTela";
+import TaticTela from "./TaticTela/TaticTela";
+import PsicoTela from "./PsicoTela/PsicoTela";
 import Halter from "../img/Halter.png"
 import Nutri from "../img/Nutri.png"
 import Tatico from "../img/Tatico.png"
