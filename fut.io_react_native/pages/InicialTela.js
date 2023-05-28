@@ -6,7 +6,7 @@ import Metas from "../img/Metas.png";
 
 import MenuTop from "../components/MenuTop";
 import React, { useEffect, useState } from 'react';
-import { Text, View, Button, Image, TextInput, ImageBackground, StyleSheet, TouchableOpacity, Pressable, StatusBar  } from "react-native";
+import { Text, View, Platform, Button, Image, TextInput, ImageBackground, StyleSheet, TouchableOpacity, Pressable, StatusBar  } from "react-native";
 function InicialTela({navigation}){
     return(
         <Pressable style={styles_inicialtela.BackGround} >
